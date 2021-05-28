@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Netlix</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .navbarLogo {
+            width: 100px;
+        }
+        .bg-Color {
+            color: white;
+            background-color: rgb(20, 20, 20);
+        }
+        .avatar {
+            width: 30px;
+        }
+        .kidsIcon {
+            width: 30px;
+        }
+        .bell {
+            color: white;
+            align-items: center;
+        }
+        #navbarIcon1 {
+            align-items: flex-end;
+            color: white;
+        }
+        .icon1 {
+            color: white;
+            left: 00px;
+        }
+        .icon {
+            left: 1050px;
+            top: 27px;
+            bottom: 0px;
+        }
+        .icon2 {
+            left: 1100px;
+            top: 27px;
+        }
+       
+        
+        body {
+            background-color: #141414;
+            color: lightgrey;
+            padding: 40px;
+        }
+    
+        .footer {
+            background-color: #141414;
+            margin-bottom: 0%;
+            /* margin-top: 50px; */
+            color: grey;
+            padding-bottom: 10px;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: inherit;
+            width: 100%;
+            background: color #141414;;
+        }
+
+        .main_footer_div {
+            text-align: left;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .fa-cog {
+            color: #141414;;
+        }
+        .footer_icon {
+            background: color #141414;;
+            color: grey;
+            padding-top: 5px;
+            padding-bottom: 10PX;
+            padding-left: 200px;
+        
+        }
+        .fab {
+            margin-left: 15px;
+        }
+        .row_footer {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .column_game {
+            padding-right: 70px;
+        }
+        @media only screen and (max-width: 400px) {
+            .icon-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: black;
+            }
+        }
+ 
+
+h1{
+    color: white;
+}
+
+hr{
+    color: thistle;
+}
+
+#netflix-logo{
+    width: 200px;
+    height: 100px;
+}
+
+#avatar-logo{
+    width:100px;
+}
+
+h5{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
+
+#language{
+    color: gray;
+}
+  .name{
+      background-color: gray;
+      border-style:none ;
+  }
+
+
+.Button1st{
+    background-color:#373535;
+    color:whitesmoke;
+    border-color: whitesmoke ;
+    border-style: none;
+
+}
+.editButton{
+    background-color:#373535;
+    color:gray;
+    border-color: #7b7a7a;
+    border-style: none;
+}
+ 
+.saveButton{
+    background-color: white;
+    color: black;
+}
+.cancelButton{
+    border-color: white;
+    color:gray;
+}
+.deleteButton{
+    border-color: white;
+    color:gray;
+}
+label{
+    color: white;
+}
+    </style>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-Color fixed-top">
+    <img src="netflix_logo.png" alt="logo" class="navbarLogo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TV Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recently Added</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Add Movie</a>
+        </li>
+        
+        
+         
+      </ul>
+     <div class="d-flex align-items-center">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-search" viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+      </svg></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+        height="16" fill="currentColor" class="bi bi-bell-fill bell  align-items-center px-30"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+      </svg></a>
+     
+       
+          <a href="#" >
+            <div class="nav-item dropdown justify-content-end ml-auto nav-link">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="avatar.png" alt="" class="avatar">
+              </a>
+  
+              <div  class="dropdown-menu userDropdown" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">
+                  Kids   <img class="kidsIcon" src="kids_icon.png" alt="kidsIcon">
+                </a>
+                <a class="addUser "href="profile.html"> Add User</a>
+              </div>
+          </a>
+     </div>
+      
+    </div>
+  </nav>
+
+  <div class="container-fluid my-5">
+    <div class="row justify-content-center">
+        
+        
+        <div class="col-4">
+            <h1 class="center">Add movie</h1>
+            <hr>
+            <div class="row justify-content-center">
+           
+            <div class="col-12">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">name</label>
+                        <input
+                          id="name"
+                          type="text"
+                          class="form-control"
+                          aria-describedby="name"
+                        />
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="description">description</label>
+                        <textarea
+                          id="description"
+                          type="text"
+                          rows="3"
+                          class="form-control"
+                          aria-describedby="event description"
+                        ></textarea>
+                      </div>
+                      
+                      <div>
+                         <label for="description">categories</label>  
+                         <input
+                         id="categories"
+                         type="text"
+                         class="form-control"
+                         aria-describedby="categories"
+                       />
+                       <!-- <select name="language" id="language" placeholder="language" id='categories'>
+                          <option value="en">Horror</option>
+                          <option value="de">action</option>
+                          <option value="ar">Documentaries </option>
+                      </select> -->
+                    </div>
+                    <div class="form-group">
+                    <label for="Image">Image Url</label>  
+                  <input
+                      id="imageUrl"
+                      type="link"
+                      class="form-control"
+                      aria-describedby="price"
+                    />
+                  </div>  
+                </form> 
+                
+            <hr>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-lg saveButton" onclick='handleSubmit()'> ADD MOVIE </button>
+                <button type="button" class="btn btn-lg cancelButton">EDIT MOVIE</button>
+                <button type="button" class="btn btn-lg deleteButton">DELETE MOVIE</button>
+                
+            </div>
+           
+        </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer fixed-bottom">
+
+        <div class="container main_footer_div">
+
+            <div class="row row_footer ">
+
+                <div class="col-12 col-sm-6 col-lg-3 column_game">
+                    Audio and Subtitles <br>
+                    Media Center <br>
+                    Privacy <br>
+                    Contact Us <br>
+                    <div
+                        style="display: inline;border: solid grey 1px; margin-top: 5px; margin-bottom: 5px; margin-right:10px;padding-left: 3px;padding-bottom: 3px;padding-right: 3px;">
+                        Service Code</div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 column_game">
+                    Audio Description<br>
+                    Invertor Relations <br>
+                    Legal Notices <br>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 column_game">
+                    Help Center <br>
+                    Jobs <br>
+                    Cookie Preferences <br>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 column_game">
+                    Gift Cards <br>
+                    Terms of use <br>
+                    Corporate Information <br>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <script>
+         
+        const handleSubmit = async (movie) => {
+            const url = "https://striveschool-api.herokuapp.com/api/movies/";
+            // product.preventDefault();
+       
+            
+
+            const myEvent = {
+            name :document.getElementById("name").value,
+            description: document.getElementById("description").value,
+            category: document.getElementById("categories").value,
+            imageUrl: document.getElementById("imageUrl").value,
+           
+            
+}
+   
+   
+        try {
+       const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNDE0YWNlYWY0ODAwMTVjOTE4NzAiLCJpYXQiOjE2MjIwMzI3MTQsImV4cCI6MTYyMzI0MjMxNH0.-5K8XCFP-8GPlg0t945KeE6P0WstxgVIbyjpAjqfw0w",
+                "Content-Type": "application/json"
+               },
+            body: JSON.stringify(myEvent)
+        })
+    
+  
+    console.log("RESPONSE", response);
+          if (response.ok) {
+         
+            const movie = await movie.json();
+            alert("Movie created sccessfully with an id of " + movie._id);
+          } else {
+            
+            alert("Movie creation failed")
+   
+          }
+
+     
+        
+      }catch (err) {
+        alert(err.massage)
+    } 
+    
+}
+        
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
